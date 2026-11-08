@@ -5,68 +5,167 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Badsha Baitul Haque | Portfolio</title>
+<meta name="description" content="Welcome to the personal portfolio of Badsha Baitul Haque.">
 <style>
-*{box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
- margin:0;
  font-family:Arial,sans-serif;
- background:#0b1220;
- color:white;
+ background:#0b1120;
+ color:#f8fafc;
+ line-height:1.7;
+}
+nav{
+ position:sticky;top:0;z-index:10;
+ background:#111827;
+ padding:18px 7%;
+ display:flex;justify-content:space-between;
+ align-items:center;flex-wrap:wrap;
+ border-bottom:1px solid #26334a;
+}
+.logo{font-size:19px;font-weight:bold;color:#60a5fa}
+nav a{color:white;text-decoration:none;margin-left:17px;font-size:14px}
+nav a:hover{color:#60a5fa}
+.hero{
+ min-height:85vh;padding:90px 20px;
+ display:flex;flex-direction:column;
+ justify-content:center;align-items:center;
  text-align:center;
+ background:radial-gradient(ellipse at top,#172d50,#0b1120 65%);
 }
-header{padding:25px;color:#60a5fa;font-size:22px}
-main{padding:80px 20px}
-h1{font-size:38px}
-h1 span{color:#60a5fa}
-p{color:#cbd5e1;line-height:1.8}
+.avatar{
+ width:125px;height:125px;border-radius:50%;
+ display:grid;place-items:center;
+ background:#1e3a5f;border:3px solid #60a5fa;
+ color:#93c5fd;font-size:42px;font-weight:bold;
+ margin-bottom:25px;
+}
+.hero h1{font-size:clamp(34px,7vw,58px);line-height:1.2}
+.hero h1 span{color:#60a5fa}
+.hero p{color:#cbd5e1;margin:20px 0;max-width:550px}
 .btn{
- display:inline-block;
- background:#2563eb;
- color:white;
- padding:13px 25px;
- border-radius:8px;
- text-decoration:none;
- margin-top:20px;
+ display:inline-block;padding:12px 25px;
+ background:#2563eb;color:white;
+ border-radius:8px;text-decoration:none;
+ margin:8px;border:1px solid #2563eb;
 }
-section{padding:35px 20px}
+.btn:hover{background:#1d4ed8}
+.btn-outline{background:transparent;border-color:#60a5fa}
+section{padding:75px 8%;scroll-margin-top:70px}
+.heading{text-align:center;font-size:32px;margin-bottom:35px}
+.heading span{color:#60a5fa}
 .card{
- max-width:500px;
- margin:15px auto;
- padding:25px;
- background:#172238;
- border-radius:12px;
+ background:#172238;border:1px solid #293b58;
+ border-radius:15px;padding:28px;margin:15px auto;
+ max-width:850px;
 }
-footer{padding:25px;color:#94a3b8}
+.card h3{color:#60a5fa;margin-bottom:12px}
+.card p{color:#cbd5e1}
+.skills,.projects{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+ gap:18px;max-width:950px;margin:auto;
+}
+.skill,.project{
+ background:#172238;border:1px solid #293b58;
+ padding:25px;border-radius:12px;text-align:center;
+}
+.skill h3,.project h3{color:#60a5fa;margin-bottom:8px}
+.skill p,.project p{color:#cbd5e1;font-size:14px}
+.contact{text-align:center}
+.contact p{color:#cbd5e1;margin:10px}
+footer{
+ text-align:center;padding:25px;
+ border-top:1px solid #26334a;color:#94a3b8;
+}
+@media(max-width:600px){
+ nav{justify-content:center;gap:12px}
+ nav a{margin:0 5px;font-size:12px}
+ section{padding:55px 6%}
+ .hero{min-height:75vh}
+}
 </style>
 </head>
 <body>
-<header>BADSHA BAITUL HAQUE</header>
-<main>
-<h1>Hello, I'm <span>Badsha</span></h1>
-<h2>Welcome to My Portfolio</h2>
-<p>I'm a passionate learner and aspiring professional.<br>
-Welcome to my personal website.</p>
-<a class="btn" href="#about">Discover More</a>
-</main>
+
+<nav>
+ <div class="logo">BADSHA.</div>
+ <div>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<div class="hero" id="home">
+ <div class="avatar">BBH</div>
+ <h1>Hello, I'm <span>Badsha</span></h1>
+ <h2>Badsha Baitul Haque</h2>
+ <p>Welcome to my personal portfolio. I am passionate about learning, creativity and building my future.</p>
+ <div>
+  <a class="btn" href="#about">Discover More</a>
+  <a class="btn btn-outline" href="#contact">Contact Me</a>
+ </div>
+</div>
+
 <section id="about">
-<div class="card">
-<h2>About Me</h2>
-<p>Hello! My name is Badsha Baitul Haque.
-This is my personal portfolio website.</p>
-</div>
+ <h2 class="heading">About <span>Me</span></h2>
+ <div class="card">
+  <h3>Who Am I?</h3>
+  <p>Hello! My name is Badsha Baitul Haque. Welcome to my personal portfolio website. This is where I will share my journey, interests, skills and projects as I continue learning and growing.</p>
+ </div>
 </section>
-<section>
-<div class="card">
-<h2>My Skills</h2>
-<p>Learning • Creativity • Communication</p>
-</div>
+
+<section id="skills">
+ <h2 class="heading">My <span>Skills</span></h2>
+ <div class="skills">
+  <div class="skill">
+   <h3>Learning</h3>
+   <p>Always exploring new knowledge.</p>
+  </div>
+  <div class="skill">
+   <h3>Creativity</h3>
+   <p>Enjoying creative ideas and thinking.</p>
+  </div>
+  <div class="skill">
+   <h3>Communication</h3>
+   <p>Connecting and sharing ideas.</p>
+  </div>
+  <div class="skill">
+   <h3>Technology</h3>
+   <p>Interested in digital technology.</p>
+  </div>
+ </div>
 </section>
-<section>
-<div class="card">
-<h2>Contact Me</h2>
-<p>Email: Your email address</p>
-</div>
+
+<section id="projects">
+ <h2 class="heading">My <span>Projects</span></h2>
+ <div class="projects">
+  <div class="project">
+   <h3>Personal Portfolio</h3>
+   <p>My first personal website, built with HTML and CSS.</p>
+  </div>
+  <div class="project">
+   <h3>Coming Soon</h3>
+   <p>More projects and creative work will be added here.</p>
+  </div>
+ </div>
 </section>
-<footer>© 2026 Badsha Baitul Haque</footer>
+
+<section id="contact" class="contact">
+ <h2 class="heading">Contact <span>Me</span></h2>
+ <div class="card">
+  <h3>Let's Connect!</h3>
+  <p>Interested in connecting? You can reach me through my social profiles.</p>
+  <p>Social links will be added soon.</p>
+ </div>
+</section>
+
+<footer>
+ <p>© 2026 Badsha Baitul Haque. All Rights Reserved.</p>
+ <p>Made with ❤️</p>
+</footer>
+
 </body>
 </html>
