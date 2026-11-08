@@ -1,103 +1,395 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badsha Baitul Haque | Portfolio</title>
+<meta name="description" content="Welcome to the personal portfolio of Badsha Baitul Haque.">
 <style>
-#re-experience{background:#0b1220;color:#e8eef8;padding:55px 16px;font-family:Arial,sans-serif}
-#re-experience .heading{text-align:center;color:#60a5fa;font-size:30px}
-#re-experience .intro{text-align:center;color:#aebdd2;margin-bottom:30px}
-.re-card{max-width:850px;margin:25px auto;background:#192941;border:1px solid #344968;border-radius:18px;overflow:hidden}
-.re-scene{height:240px;position:relative;overflow:hidden;background:linear-gradient(145deg,#304963,#142237)}
-.re-scene:before{content:"";position:absolute;top:22px;left:10%;width:80%;height:3px;background:#b9e3ff;box-shadow:0 0 15px #8bcaff}
-.re-floor{position:absolute;bottom:0;width:100%;height:40px;background:repeating-linear-gradient(90deg,#526176 0 50px,#293b50 50px 55px)}
-.re-bike{position:absolute;bottom:35px;left:50%;width:220px;height:110px;transform:translateX(-50%)}
-.re-wheel{position:absolute;bottom:0;width:53px;height:53px;border:7px solid #101923;border-radius:50%;background:radial-gradient(circle,#b8c5d2 0 15%,#29394b 18% 30%,#111 33%);box-shadow:0 0 0 2px #a5b3c4}
-.re-wheel.a{left:8px}.re-wheel.b{right:8px}
-.re-frame{position:absolute;left:47px;bottom:28px;width:125px;height:55px;border:7px solid #a9b7c8;border-top:0;transform:skew(-18deg)}
-.re-tank{position:absolute;left:72px;bottom:65px;width:77px;height:34px;border-radius:45% 45% 30% 30%;background:linear-gradient(135deg,#080e16,#46566b,#111);border:2px solid #d2a75e;transform:rotate(-7deg)}
-.re-seat{position:absolute;left:45px;bottom:91px;width:72px;height:13px;border-radius:12px;background:#11151d}
-.re-fork{position:absolute;left:172px;bottom:35px;width:7px;height:75px;background:#bdcbd9;transform:rotate(-15deg)}
-.re-worker{position:absolute;left:15%;bottom:48px;width:35px;height:85px;animation:worker 2s infinite ease-in-out}
-.re-head{width:24px;height:24px;margin:auto;border-radius:50%;background:#d9a47c;border:3px solid #29384d}
-.re-body{width:32px;height:48px;background:#32618e;border-radius:8px;margin:auto}
-.re-arm{position:absolute;top:34px;left:22px;width:52px;height:8px;background:#d9a47c;border-radius:8px;transform:rotate(-20deg);transform-origin:left;animation:arm 1.4s infinite alternate}
-.re-label{position:absolute;top:12px;left:15px;color:#d8eaff;font-size:12px;letter-spacing:2px}
-.re-box{position:absolute;bottom:42px;width:100px;height:72px;background:repeating-linear-gradient(90deg,#b47c3e 0 23px,#d9a45e 23px 27px);border:5px solid #86572d;box-shadow:inset 0 0 0 2px #edc184}
-.re-box.left{left:13%}.re-box.right{right:12%;transform:scale(.9)}
-.re-part{position:absolute;bottom:130px;left:39%;width:58px;height:22px;border:5px solid #c4d1df;border-radius:12px;animation:pack 3s infinite}
-.re-forklift{position:absolute;left:5%;bottom:43px;width:90px;height:55px;border-radius:7px;background:#e4a32f;animation:lift 4s infinite}
-.re-forklift:before{content:"";position:absolute;right:3px;top:-55px;width:7px;height:105px;background:#dce4ed}
-.re-forklift:after{content:"";position:absolute;left:10px;bottom:-12px;width:26px;height:26px;border-radius:50%;background:#101923;box-shadow:55px 0 #101923}
-.re-robot{position:absolute;left:25%;bottom:42px;width:19px;height:125px;border-radius:10px;background:#e9a02a;transform-origin:bottom;animation:robot 2s infinite alternate}
-.re-robot:before{content:"";position:absolute;top:12px;left:5px;width:75px;height:17px;border-radius:10px;background:#f4ae35;transform:rotate(-35deg);transform-origin:left}
-.re-robot:after{content:"";position:absolute;top:47px;left:65px;width:13px;height:48px;background:#f4ae35;transform:rotate(25deg)}
-.re-weldframe{position:absolute;right:12%;bottom:50px;width:180px;height:100px;border:9px solid #b8c6d6;border-left:0;transform:skew(-15deg)}
-.re-spark{position:absolute;left:57%;bottom:95px;width:13px;height:13px;border-radius:50%;background:#fff8b2;box-shadow:0 0 15px 8px #ff9b22,15px -15px 4px #ffe36b,-15px 12px 4px #ff8d23;animation:spark .3s infinite alternate}
-.re-copy{padding:23px}
-.re-num{color:#93bfff;font-size:13px;letter-spacing:2px}
-.re-copy h3{color:#f0b85e;font-size:23px;margin:10px 0}
-.re-copy p{color:#c8d3e2;line-height:1.7;margin:0}
-.re-date{text-align:center;color:#93bfff;margin-top:30px}
-@keyframes worker{50%{transform:translateY(-5px) rotate(-4deg)}}
-@keyframes arm{to{transform:rotate(15deg)}}
-@keyframes pack{0%{transform:translateY(-30px)}70%,100%{transform:translate(65px,65px)}}
-@keyframes lift{50%{transform:translateX(90px)}}
-@keyframes robot{to{transform:rotate(18deg)}}
-@keyframes spark{to{opacity:.3;transform:scale(1.8)}}
-@media(max-width:480px){.re-scene{height:210px}.re-bike{transform:translateX(-50%) scale(.8)}.re-copy h3{font-size:20px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:Arial,sans-serif;
+ background:#0b1120;
+ color:#f8fafc;
+ line-height:1.7;
+}
+nav{
+ position:sticky;top:0;z-index:10;
+ background:#111827;
+ padding:18px 7%;
+ display:flex;justify-content:space-between;
+ align-items:center;flex-wrap:wrap;
+ border-bottom:1px solid #26334a;
+}
+.logo{font-size:19px;font-weight:bold;color:#60a5fa}
+nav a{color:white;text-decoration:none;margin-left:17px;font-size:14px}
+nav a:hover{color:#60a5fa}
+.hero{
+ min-height:85vh;padding:90px 20px;
+ display:flex;flex-direction:column;
+ justify-content:center;align-items:center;
+ text-align:center;
+ background:radial-gradient(ellipse at top,#172d50,#0b1120 65%);
+}
+.avatar{
+ width:125px;height:125px;border-radius:50%;
+ display:grid;place-items:center;
+ background:#1e3a5f;border:3px solid #60a5fa;
+ color:#93c5fd;font-size:42px;font-weight:bold;
+ margin-bottom:25px;
+}
+.hero h1{font-size:clamp(34px,7vw,58px);line-height:1.2}
+.hero h1 span{color:#60a5fa}
+.hero p{color:#cbd5e1;margin:20px 0;max-width:550px}
+.btn{
+ display:inline-block;padding:12px 25px;
+ background:#2563eb;color:white;
+ border-radius:8px;text-decoration:none;
+ margin:8px;border:1px solid #2563eb;
+}
+.btn:hover{background:#1d4ed8}
+.btn-outline{background:transparent;border-color:#60a5fa}
+section{padding:75px 8%;scroll-margin-top:70px}
+.heading{text-align:center;font-size:32px;margin-bottom:35px}
+.heading span{color:#60a5fa}
+.card{
+ background:#172238;border:1px solid #293b58;
+ border-radius:15px;padding:28px;margin:15px auto;
+ max-width:850px;
+}
+.card h3{color:#60a5fa;margin-bottom:12px}
+.card p{color:#cbd5e1}
+.skills,.projects{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+ gap:18px;max-width:950px;margin:auto;
+}
+.skill,.project{
+ background:#172238;border:1px solid #293b58;
+ padding:25px;border-radius:12px;text-align:center;
+}
+.skill h3,.project h3{color:#60a5fa;margin-bottom:8px}
+.skill p,.project p{color:#cbd5e1;font-size:14px}
+.contact{text-align:center}
+.contact p{color:#cbd5e1;margin:10px}
+footer{
+ text-align:center;padding:25px;
+ border-top:1px solid #26334a;color:#94a3b8;
+}
+@media(max-width:600px){
+ nav{justify-content:center;gap:12px}
+ nav a{margin:0 5px;font-size:12px}
+ section{padding:55px 6%}
+ .hero{min-height:75vh}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">BADSHA.</div>
+ <div>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<div class="hero" id="home">
+ <div class="avatar">BBH</div>
+ <h1>Hello, I'm <span>Badsha</span></h1>
+ <h2>Badsha Baitul Haque</h2>
+ <p>Welcome to my personal portfolio. I am passionate about learning, creativity and building my future.</p>
+ <div>
+  <a class="btn" href="#about">Discover More</a>
+  <a class="btn btn-outline" href="#contact">Contact Me</a>
+ </div>
+</div>
+
+<section id="about">
+ <h2 class="heading">About <span>Me</span></h2>
+ <div class="card">
+  <h3>Who Am I?</h3>
+  <p>Hello! My name is Badsha Baitul Haque. Welcome to my personal portfolio website. This is where I will share my journey, interests, skills and projects as I continue learning and growing.</p>
+ </div>
+</section>
+
+<section id="skills">
+ <h2 class="heading">My <span>Skills</span></h2>
+ <div class="skills">
+  <div class="skill">
+   <h3>Learning</h3>
+   <p>Always exploring new knowledge.</p>
+  </div>
+  <div class="skill">
+   <h3>Creativity</h3>
+   <p>Enjoying creative ideas and thinking.</p>
+  </div>
+  <div class="skill">
+   <h3>Communication</h3>
+   <p>Connecting and sharing ideas.</p>
+  </div>
+  <div class="skill">
+   <h3>Technology</h3>
+   <p>Interested in digital technology.</p>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2 class="heading">My <span>Projects</span></h2>
+ <div class="projects">
+  <div class="project">
+   <h3>Personal Portfolio</h3>
+   <p>My first personal website, built with HTML and CSS.</p>
+  </div>
+  <div class="project">
+   <h3>Coming Soon</h3>
+   <p>More projects and creative work will be added here.</p>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <h2 class="heading">Contact <span>Me</span></h2>
+ <div class="card">
+  <h3>Let's Connect!</h3>
+  <p>Interested in connecting? You can reach me through my social profiles.</p>
+  <p>Social links will be added soon.</p>
+ </div>
+</section>
+
+<footer>
+ <p>© 2026 Badsha Baitul Haque. All Rights Reserved.</p>
+ <p>Made with ❤️</p>
+</footer>
+
+</body>
+</html>
+
+<style>
+#re3d{background:#0b1220;color:#fff;padding:45px 14px;font-family:Arial,sans-serif}
+#re3d h2{text-align:center;color:#65a8ff;font-size:29px}
+#re3d .intro{text-align:center;color:#aabbd0;margin-bottom:30px}
+.re3d-card{max-width:850px;margin:24px auto;background:#192941;border:1px solid #344968;border-radius:16px;overflow:hidden}
+.re3d-view{height:300px;position:relative;background:linear-gradient(#1e344e,#0b1729)}
+.re3d-view canvas{width:100%;height:100%;display:block}
+.re3d-info{padding:20px}
+.re3d-info small{color:#91baff;letter-spacing:2px}
+.re3d-info h3{color:#f1b85d;margin:10px 0}
+.re3d-info p{color:#cbd5e1;line-height:1.7;margin:0}
+@media(max-width:480px){.re3d-view{height:250px}}
 </style>
 
-<section id="re-experience">
-<h2 class="heading">Royal Enfield Experience</h2>
+<section id="re3d">
+<h2>Royal Enfield Experience</h2>
 <p class="intro">Manufacturing & Production | Chennai | 2024–2026</p>
 
-<!-- 01 VEHICLE ASSEMBLY -->
-<div class="re-card">
-<div class="re-scene">
-<div class="re-label">VEHICLE ASSEMBLY LINE</div>
-<div class="re-worker"><div class="re-head"></div><div class="re-body"></div><div class="re-arm"></div></div>
-<div class="re-bike">
-<div class="re-wheel a"></div><div class="re-wheel b"></div>
-<div class="re-frame"></div><div class="re-tank"></div><div class="re-seat"></div><div class="re-fork"></div>
-</div>
-<div class="re-floor"></div>
-</div>
-<div class="re-copy">
-<div class="re-num">01 — VEHICLE ASSEMBLY</div>
-<h3>Motorcycle Assembly</h3>
-<p>Worked on the motorcycle production line, fitting fuel tanks, side panels, mudguards and rear-view mirrors. Supported assembly operations and component fitting.</p>
-</div>
+<div class="re3d-card">
+  <div class="re3d-view" id="reAssembly"></div>
+  <div class="re3d-info">
+    <small>01 — VEHICLE ASSEMBLY</small>
+    <h3>Motorcycle Assembly</h3>
+    <p>Worked on the motorcycle production line, fitting fuel tanks, side panels, mudguards and rear-view mirrors. Supported assembly operations and component fitting.</p>
+  </div>
 </div>
 
-<!-- 02 CKD PACKING -->
-<div class="re-card">
-<div class="re-scene">
-<div class="re-label">CKD PACKING & EXPORT</div>
-<div class="re-box left"></div>
-<div class="re-box right"></div>
-<div class="re-part"></div>
-<div class="re-forklift"></div>
-<div class="re-floor"></div>
-</div>
-<div class="re-copy">
-<div class="re-num">02 — CKD OPERATIONS</div>
-<h3>CKD Packing & Loading</h3>
-<p>Worked with motorcycle parts identification, scanning and adjustment. Supported systematic packing of components into boxes for export preparation and dispatch.</p>
-</div>
+<div class="re3d-card">
+  <div class="re3d-view" id="reCKD"></div>
+  <div class="re3d-info">
+    <small>02 — CKD OPERATIONS</small>
+    <h3>CKD Packing & Loading</h3>
+    <p>Worked with motorcycle parts identification, scanning and adjustment. Supported systematic packing of components into boxes for export preparation and dispatch.</p>
+  </div>
 </div>
 
-<!-- 03 ROBOTIC WELDING -->
-<div class="re-card">
-<div class="re-scene">
-<div class="re-label">ROBOTIC WELDING CELL</div>
-<div class="re-robot"></div>
-<div class="re-weldframe"></div>
-<div class="re-spark"></div>
-<div class="re-floor"></div>
+<div class="re3d-card">
+  <div class="re3d-view" id="reWelding"></div>
+  <div class="re3d-info">
+    <small>03 — FABRICATION</small>
+    <h3>Robotic Welding</h3>
+    <p>Gained practical experience in motorcycle frame fabrication and robotic welding operations in a manufacturing environment.</p>
+  </div>
 </div>
-<div class="re-copy">
-<div class="re-num">03 — FABRICATION</div>
-<h3>Robotic Welding</h3>
-<p>Gained practical experience in motorcycle frame fabrication and robotic welding operations in a manufacturing environment.</p>
-</div>
-</div>
-
-<div class="re-date">ROYAL ENFIELD | 2024 – 2026</div>
+<p class="intro">ROYAL ENFIELD | 2024–2026</p>
 </section>
+
+<script type="module">
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+
+function makeScene(id){
+ const el=document.getElementById(id);
+ const scene=new THREE.Scene();
+ scene.background=new THREE.Color(0x1b3049);
+ const camera=new THREE.PerspectiveCamera(42,1,.1,100);
+ camera.position.set(5,3.2,7);
+ const renderer=new THREE.WebGLRenderer({antialias:true});
+ renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+ el.appendChild(renderer.domElement);
+ scene.add(new THREE.HemisphereLight(0xffffff,0x35445b,2));
+ const light=new THREE.DirectionalLight(0xffffff,2.5);
+ light.position.set(4,7,5);scene.add(light);
+ const floor=new THREE.Mesh(new THREE.PlaneGeometry(30,30),new THREE.MeshStandardMaterial({color:0x26394e,roughness:.9}));
+ floor.rotation.x=-Math.PI/2;floor.position.y=-.03;scene.add(floor);
+ function resize(){
+  const w=el.clientWidth,h=el.clientHeight;
+  camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);
+ }
+ resize();window.addEventListener('resize',resize);
+ return {scene,camera,renderer};
+}
+const mat=(color,metalness=0,roughness=.55)=>new THREE.MeshStandardMaterial({color,metalness,roughness});
+function cube(scene,x,y,z,sx,sy,sz,material){
+ const o=new THREE.Mesh(new THREE.BoxGeometry(sx,sy,sz),material);
+ o.position.set(x,y,z);scene.add(o);return o;
+}
+function cylinder(scene,x,y,z,r1,r2,len,material,rotZ=0){
+ const o=new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,len,24),material);
+ o.position.set(x,y,z);o.rotation.z=rotZ;scene.add(o);return o;
+}
+function rod(scene,a,b,r,material){
+ const start=new THREE.Vector3(...a),end=new THREE.Vector3(...b);
+ const d=new THREE.Vector3().subVectors(end,start);
+ const o=new THREE.Mesh(new THREE.CylinderGeometry(r,r,d.length(),12),material);
+ o.position.copy(start).add(end).multiplyScalar(.5);
+ o.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());
+ scene.add(o);return o;
+}
+function bike(scene){
+ const black=mat(0x111923,.55),chrome=mat(0xaebdca,.85,.25),red=mat(0x9b1824,.4);
+ const rubber=mat(0x090d13),gold=mat(0xc99a48,.65);
+ const group=new THREE.Group();scene.add(group);
+ for(const x of [-1.15,1.15]){
+  const wheel=new THREE.Mesh(new THREE.TorusGeometry(.53,.095,14,36),rubber);
+  wheel.position.set(x,.62,0);group.add(wheel);
+  const rim=new THREE.Mesh(new THREE.TorusGeometry(.39,.025,8,32),chrome);
+  rim.position.copy(wheel.position);group.add(rim);
+  cylinder(group,x,.62,0,.045,.045,.16,chrome,Math.PI/2);
+ }
+ rod(group,[-1.15,.62,0],[0,.92,0],.055,chrome);
+ rod(group,[0,.92,0],[1.15,.62,0],.055,chrome);
+ rod(group,[-1.15,.62,0],[-.35,1.15,0],.045,chrome);
+ rod(group,[-.35,1.15,0],[1.15,.62,0],.045,chrome);
+ cube(group,0,.78,0,.55,.38,.34,black);
+ const tank=new THREE.Mesh(new THREE.SphereGeometry(1,24,16),red);
+ tank.scale.set(.58,.28,.38);tank.position.set(-.25,1.35,0);group.add(tank);
+ const seat=cube(group,.55,1.38,0,.8,.13,.38,black);
+ const engine=new THREE.Mesh(new THREE.BoxGeometry(.58,.55,.48),mat(0x7d8791,.8));
+ engine.position.set(.1,.85,0);group.add(engine);
+ cylinder(group,.15,.82,0,.24,.24,.52,chrome,Math.PI/2);
+ rod(group,[1.12,.68,0],[1.02,1.6,0],.045,chrome);
+ rod(group,[1.02,1.6,0],[.72,1.64,0],.035,chrome);
+ rod(group,[-.85,1.42,0],[-.4,1.52,0],.035,chrome);
+ rod(group,[-.4,1.52,0],[.2,1.52,0],.035,chrome);
+ cylinder(group,-.05,.65,0,.07,.07,.9,chrome,Math.PI/2);
+ group.position.y=0;
+ return group;
+}
+
+// 1. Assembly: 3D bike and a moving 3D worker
+{
+ const {scene,camera,renderer}=makeScene('reAssembly');
+ camera.position.set(4,2.7,6);camera.lookAt(0,1,0);
+ const b=bike(scene);b.scale.setScalar(.9);
+ const blue=mat(0x285b91),skin=mat(0xc58d68),dark=mat(0x17202c);
+ const worker=new THREE.Group();scene.add(worker);
+ const torso=cube(worker,-2,1.15,0,.38,.62,.3,blue);
+ const head=new THREE.Mesh(new THREE.SphereGeometry(.19,16,16),skin);
+ head.position.set(-2,1.65,0);worker.add(head);
+ const arm=new THREE.Group();arm.position.set(-1.82,1.35,0);worker.add(arm);
+ rod(arm,[0,0,0],[.55,-.2,.05],.075,blue);
+ rod(arm,[.55,-.2,.05],[1.0,.1,.05],.055,skin);
+ cylinder(scene,-2,.12,0,.14,.14,.25,dark);
+ const parts=[];
+ const tank=cube(scene,-.25,2.4,0,.8,.32,.55,redMat());
+ function redMat(){return mat(0x9b1824,.35)}
+ parts.push(tank);
+ const clock=new THREE.Clock();
+ function animate(){
+  requestAnimationFrame(animate);const t=clock.getElapsedTime();
+  arm.rotation.z=Math.sin(t*2)*.35-.2;
+  tank.position.y=2.25+Math.max(0,Math.sin(t*1.2))*.7;
+  if(t%8>4)tank.position.y=1.35;
+  renderer.render(scene,camera);
+ }
+ animate();
+}
+
+// 2. CKD: parts move into an export crate and forklift moves
+{
+ const {scene,camera,renderer}=makeScene('reCKD');
+ camera.position.set(5,3.2,7);camera.lookAt(0,.8,0);
+ const wood=mat(0xb47b3f),edge=mat(0xe0ad69),yellow=mat(0xf0a62e),black=mat(0x151d29);
+ const crate=new THREE.Group();scene.add(crate);
+ cube(crate,0,.55,0,2.3,1.1,1.5,wood);
+ for(let x=-1;x<=1.01;x+=.5){
+  cube(crate,x,.55,.77,.07,1.08,.05,edge);
+  cube(crate,x,.55,-.77,.07,1.08,.05,edge);
+ }
+ const parts=[];
+ for(let i=0;i<4;i++){
+  const p=cube(scene,-2+i*.15,2+i*.12,0,.48,.16,.38,mat(i%2?0x899aaa:0x202a36,.5));
+  parts.push(p);
+ }
+ const lift=new THREE.Group();scene.add(lift);
+ cube(lift,-2,.55,0,1.1,.65,.7,yellow);
+ cube(lift,-1.65,1.1,0,.08,1.6,.08,black);
+ cube(lift,-1.3,.15,0,.24,.24,.24,black);
+ cube(lift,-2.55,.15,0,.24,.24,.24,black);
+ rod(scene,[-1.8,.2,0],[-1.8,.8,0],.07,black);
+ const clock=new THREE.Clock();
+ function animate(){
+  requestAnimationFrame(animate);const t=clock.getElapsedTime();
+  lift.position.x=1.0+Math.sin(t*.5)*.7;
+  parts.forEach((p,i)=>{
+   const phase=(t+i*.6)%5;
+   p.position.set(-2.2+Math.min(1,phase/3)*2.2,2.1-Math.max(0,phase-2)*.7+i*.04,0);
+   if(phase>3.5)p.position.y=.95;
+  });
+  renderer.render(scene,camera);
+ }
+ animate();
+}
+
+// 3. Robotic welding: articulated arm, motorcycle frame and sparks
+{
+ const {scene,camera,renderer}=makeScene('reWelding');
+ camera.position.set(4,3.2,7);camera.lookAt(0,1,0);
+ const orange=mat(0xf0a020,.35),steel=mat(0x899aaa,.8),dark=mat(0x202a36);
+ const base=cylinder(scene,-1,.35,0,.48,.48,.7,orange);
+ const joint=new THREE.Group();joint.position.set(-1,.7,0);scene.add(joint);
+ cylinder(joint,0,.35,0,.22,.22,.25,dark);
+ rod(joint,[0,.4,0],[.7,1.25,0],.15,orange);
+ const joint2=new THREE.Group();joint2.position.set(.7,1.25,0);joint.add(joint2);
+ cylinder(joint2,0,0,0,.19,.19,.22,dark);
+ rod(joint2,[0,0,0],[.8,-.45,0],.12,orange);
+ const tip=new THREE.Group();tip.position.set(.8,-.45,0);joint2.add(tip);
+ rod(tip,[0,0,0],[.1,-.35,0],.045,steel);
+ const frame=new THREE.Group();scene.add(frame);
+ rod(frame,[.2,.5,-.2],[1.6,.5,-.2],.07,steel);
+ rod(frame,[.2,.5,-.2],[.75,1.25,-.2],.07,steel);
+ rod(frame,[.75,1.25,-.2],[1.6,.5,-.2],.07,steel);
+ rod(frame,[.75,1.25,-.2],[1.45,1.2,-.2],.07,steel);
+ const sparks=[];
+ for(let i=0;i<18;i++){
+  const s=new THREE.Mesh(new THREE.SphereGeometry(.035,8,8),mat(0xffb52d,0,.2));
+  scene.add(s);sparks.push(s);
+ }
+ const clock=new THREE.Clock();
+ function animate(){
+  requestAnimationFrame(animate);const t=clock.getElapsedTime();
+  joint.rotation.z=Math.sin(t*1.5)*.35;
+  joint2.rotation.z=Math.cos(t*2)*.5;
+  sparks.forEach((s,i)=>{
+   const a=t*5+i*2.4;
+   s.position.set(.9+Math.sin(a)*.35,1.0+Math.abs(Math.cos(a))* .5,-.2+Math.cos(a)*.25);
+   s.visible=Math.sin(t*8+i)>.0;
+  });
+  renderer.render(scene,camera);
+ }
+ animate();
+}
+</script>
