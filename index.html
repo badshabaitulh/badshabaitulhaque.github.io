@@ -169,3 +169,123 @@ footer{
 
 </body>
 </html>
+
+<style>
+.re-section {
+  padding: 65px 18px;
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.re-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.re-section h2 span { color: #60a5fa; }
+.re-subtitle {
+  color: #b8c5d8;
+  margin-bottom: 35px;
+}
+.re-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 20px;
+  max-width: 1050px;
+  margin: auto;
+}
+.re-card {
+  background: #1b2a40;
+  border: 1px solid #354b68;
+  border-radius: 16px;
+  padding: 20px;
+  overflow: hidden;
+  animation: reEnter .9s ease both;
+}
+.re-card:nth-child(2) { animation-delay: .3s; }
+.re-card:nth-child(3) { animation-delay: .6s; }
+.re-bike {
+  font-size: 65px;
+  margin: 15px 0;
+  display: inline-block;
+  animation: bikeMove 2.5s ease-in-out infinite;
+}
+.re-card h3 { color: #60a5fa; }
+.re-card p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.re-tag {
+  display: inline-block;
+  margin: 12px 0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #263e60;
+  color: #93c5fd;
+  font-size: 12px;
+}
+.re-year {
+  margin-top: 35px;
+  color: #93c5fd;
+  font-weight: bold;
+}
+@keyframes bikeMove {
+  0%,100% { transform: translateX(-7px) rotate(-2deg); }
+  50% { transform: translateX(7px) rotate(2deg); }
+}
+@keyframes reEnter {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<section class="re-section" id="royal-enfield">
+  <h2>Royal Enfield <span>Experience</span></h2>
+  <p class="re-subtitle">
+    Manufacturing & Production | Chennai, Tamil Nadu
+  </p>
+
+  <div class="re-grid">
+
+    <div class="re-card">
+      <div class="re-bike">🏍️</div>
+      <h3>01. Vehicle Assembly</h3>
+      <span class="re-tag">Motorcycle Production</span>
+      <p>
+        Worked on motorcycle assembly operations.
+        Installed fuel tanks, side panels, mudguards
+        and rear-view mirrors on the production line.
+      </p>
+    </div>
+
+    <div class="re-card">
+      <div class="re-bike">🏍️</div>
+      <h3>02. CKD Operations</h3>
+      <span class="re-tag">Packing & Export</span>
+      <p>
+        Worked in CKD packing and export operations.
+        Performed component scanning, adjustment,
+        identification and packaging for dispatch.
+      </p>
+    </div>
+
+    <div class="re-card">
+      <div class="re-bike">🏍️</div>
+      <h3>03. Robotic Welding</h3>
+      <span class="re-tag">Fabrication Department</span>
+      <p>
+        Worked in motorcycle frame fabrication.
+        Gained practical experience in robotic
+        welding and motorcycle frame manufacturing.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="re-year">
+    ROYAL ENFIELD | 2024 – 2026
+  </div>
+</section>
+</body>
+</html>
